@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/global.css">
 </head>
 <body>
 
@@ -17,36 +18,37 @@
 
       <!-- form: elemen pembungkus semua input -->
       <!-- action & method menentukan ke mana & bagaimana data dikirim -->
+       <div class="form-card">
       <form action="#" method="post">
 
         <div>
           <label for="nama">Nama Lengkap</label><br>
-          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
         </div>
 
         <div>
           <label for="email">Email</label><br>
-          <input type="email" id="email" name="email" placeholder="nama@email.com" >
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
         </div>
 
         <div>
           <label for="nomor telepon">Nomor Telepon</label><br>
-          <input type="number" id="nomor telepon" name="nomor telepon" placeholder="088243621921" >
+          <input type="number" id="nomor telepon" name="nomor telepon" placeholder="088243621921" required>
         </div>
 
         <div>
           <label for="tanggal lahir">Tanggal Lahir</label><br>
-          <input type="number" id="tanggal lahir" name="tanggal lahir" placeholder="06-12-2002" >
+          <input type="date" id="tanggal lahir" name="tanggal lahir" placeholder="06-12-2002" required>
         </div>
 
         <div>
           <label for="nim">NIM</label><br>
-          <input type="text" id="nim" name="nim" placeholder="Contoh: 20210001">
+          <input type="text" id="nim" name="nim" placeholder="Contoh: 20210001" required>
         </div>
 
         <div>
           <label for="prodi">Program Studi</label><br>
-          <select id="prodi" name="prodi">
+          <select id="prodi" name="prodi" required>
             <option value="">-- Pilih Program Studi --</option>
             <option value="ti">Teknologi Informasi</option>
             <option value="if">Informatika</option>
@@ -56,24 +58,27 @@
 
         <div>
           <p>Jenis Kelamin</p>
-          <input type="radio" id="pria" name="gender" value="pria">
+          <input type="radio" id="pria" name="gender" value="pria" required>
           <label for="pria">Pria</label>
-          <input type="radio" id="wanita" name="gender" value="wanita">
+          <input type="radio" id="wanita" name="gender" value="wanita" required>
           <label for="wanita">Wanita</label>
         </div>
 
         <div>
-          <input type="checkbox" id="setuju" name="setuju">
+          <input type="checkbox" id="setuju" name="setuju" required>
           <label for="setuju">Saya menyetujui syarat dan ketentuan</label>
         </div>
 
         <div>
           <label for="pesan">Pesan / Pertanyaan</label><br>
-          <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tulis pesan Anda di sini..."></textarea>
+          <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tulis pesan Anda di sini..." required></textarea>
         </div>
 
         <button type="submit">Daftar Sekarang</button>
       </form>
+
+       </div>
+
     </section>
   </main>
 
